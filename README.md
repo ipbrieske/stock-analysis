@@ -17,3 +17,5 @@ Created new branch to hold tinkering with dynamic arrays within stockAnalysis().
 Updated stockAnalysis() to output to new sheet Stock Analysis()
 
 Completed Module 2.3 All Stocks Analysis added Module 2.4 Formatting
+
+Added Module 2.5.2 with year verification recycled from stockAnalysis()
