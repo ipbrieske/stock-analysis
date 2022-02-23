@@ -18,4 +18,4 @@ Updated stockAnalysis() to output to new sheet Stock Analysis()
 
 Completed Module 2.3 All Stocks Analysis added Module 2.4 Formatting
 
-Added Module 2.5.2 with year verification recycled from stockAnalysis()
+Added Module 2.5.2 with year verification recycled from stockAnalysis(). Added interactive buttons on multiple sheets.
