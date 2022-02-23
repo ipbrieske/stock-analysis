@@ -12,4 +12,8 @@ Modified All Stocks Analysis to accept user input of ticker and year, verify inp
 
 Cleaned message boxes with new lines, fixed Or statement evaluating invalid years. Next step is to create dynamic arrays for tickers() and years() to scan new worksheets for data and populate arrays. 
 
+Created new branch to hold tinkering with dynamic arrays within stockAnalysis(). Comments on Draft Pull Request.
 
+Updated stockAnalysis() to output to new sheet Stock Analysis()
+
+Completed Module 2.3 All Stocks Analysis added Module 2.4 Formatting
