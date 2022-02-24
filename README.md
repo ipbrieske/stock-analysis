@@ -21,3 +21,10 @@ Completed Module 2.3 All Stocks Analysis added Module 2.4 Formatting
 Added Module 2.5.2 with year verification recycled from stockAnalysis(). Added interactive buttons on multiple sheets.
 
 Added Module 2.5.3 timer to allStocksAnalysis()
+
+Got significant experience with Git, including creating new branches, merging branches, pulling, committing, pushing, and debugging. 
+Questions for later: 
+- How do I implement dynamic arrays in VBA? 
+- What other GUIs are available on Excel
+- How does Excel handle random number generation and time seeding? 
+- Is recording questions like this in the readme appropriate?
