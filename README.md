@@ -32,3 +32,5 @@ Questions for later:
 2/24/22 Updates
 
 Began Module 2 Challenge, renamed primary file to VBA_Challenge.xlsm. Using a for loop, we iterate through an index number to fill four arrays. These values are stored then all analyzed and printed together using another for loop. Periodic save. 
+
+Completed Module 2 Challenge. Also added a table to store program runtimes, need to expand table to separate runtimes by year analyzed and by method of analysis. 
