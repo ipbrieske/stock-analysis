@@ -28,3 +28,7 @@ Questions for later:
 - What other GUIs are available on Excel
 - How does Excel handle random number generation and time seeding? 
 - Is recording questions like this in the readme appropriate?
+
+2/24/22 Updates
+
+Began Module 2 Challenge, renamed primary file to VBA_Challenge.xlsm. Using a for loop, we iterate through an index number to fill four arrays. These values are stored then all analyzed and printed together using another for loop. Periodic save. 
