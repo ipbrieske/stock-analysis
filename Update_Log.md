@@ -36,3 +36,6 @@ Finished Table recording all runtime tests, ready for analysis.
 2/26/22 Updates
 
 Attempted to finalize table recording runtime test average times using multiple VBA methods, none were yielding success. I was attempting to take the average of the dynamic range of runtime tests, had issues selecting a dynamic range of cells for the .Average() function in VBA. Finally decided to just give the output cells a "=AVERAGE()" function, and this gives me the desired result. Also added screenshots of final run times and averages, as well as screenshots of the main loops driving the AllStocksAnalysis() and AllStocksAnalysisRefactored() subroutines. 
+
+3/1/22
+Completed readme and renamed files. Last steps are to insert images, final proofread, and submission. 
