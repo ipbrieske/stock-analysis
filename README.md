@@ -11,9 +11,9 @@ This tool is meant as a guide for a financial professional. Past performance is 
 
 Our results are as follows:
 
-Image 1 2017 results
+![Image 1 2017 Results](https://github.com/ipbrieske/stock-analysis/blob/main/Resources/2017%20Results.png)
 
-Image 2 2018 results
+![Image 2 2018 results](https://github.com/ipbrieske/stock-analysis/blob/main/Resources/2018%20Results.png)
 
 2017 was a much better year for our green energy stocks than 2018. While in 2017 all but one of our stocks achieved an annual gain, 2018 saw all but two companies lose value. While much more information is needed to make a determination as to why this shift occurred, we can determine immediately that volatility is a factor when investing in this basket of securities. Daqo New Energy Corp (DQ), for example, experienced a dizzying 199% gain in 2017, followed by a blistering loss of 63% the following year. Further analysis would be necessary in order to determine the securities with the highest overall rate of return, but our quick analysis does point to two stocks with potential as investments. The only two companies whose stock prices rose in both 2017 and 2018 were Enphase Energy (ENPH) and Sunrun Inc. (RUN). ENPH achieved a gain of 130% in 2017 followed by an 82% gain in 2018. RUN, which barely acheived a gain of 5% in 2017 went on to lead the pack at an 84% gain in 2018, potentially signalling further growth in subsequent years. 
 
@@ -21,7 +21,7 @@ A retrospective analysis from March 2022 shows us that all these stocks were key
 
 Our two methods of analyzing this data, AllStocksAnalysis() and AllStocksAnalysisRefactored(), differed significantly in their efficiency. To make this determination, we first timed the processing speed of AllStocksAnalysis(), then refactored our code to improve efficiency. In addition to recording the time necessary to process the same data, I included a table allowing me to calculate the average runtime of a series of tests. In order to get the most accurate data, I took the average runtime of 10 calculations, for each subroutine for each year of data. Our results are as follows:
 
-Image 3 Runtime Averages
+![Image 3 Runtime Averages](https://github.com/ipbrieske/stock-analysis/blob/main/Resources/Final%20Results.png)
 
 We were able to reduce our program runtime by 69.5% just by adjusting how our code stored and printed information. Nice! Here's how we did it:
 
@@ -29,13 +29,13 @@ We were able to reduce our program runtime by 69.5% just by adjusting how our co
 
 First, see our initial program AllStocksAnalysis()
 
-Image 4 AllStocksAnalysis main loops
+![Image 4 AllStocksAnalysis main loops](https://github.com/ipbrieske/stock-analysis/blob/main/Resources/AllStocksAnalysis%20main%20loops.png)
 
 Our first attempt at this program looks at each line of the spreadsheet and records data relevant to the ticker we are examining. The information is then printed by switching back to our output worksheet and then back to our data worksheet to begin the process again. Much time is wasted reading through each line of data and asking three questions - Is this the current ticker? Is this the starting price? Is this the ending price? - each time. In addition, switching back and forth between worksheets means our computer needs to continually switch between memory locations of each worksheet, wasting valuable time. Our refactored code solves both these inefficiences. 
 
 See our refactored AllStocksAnalysisRefactored()
 
-Image 5 AllStocksAnalysisRefactored main loops
+![Image 5 AllStocksAnalysisRefactored main loops](https://github.com/ipbrieske/stock-analysis/blob/main/Resources/AllStocksAnalysisRefactored()%20main%20loops.png)
 
 Our new code leverages the power of arrays to store and recall lots of information quickly. While our updated subroutine uses more lines of code, it processes the data much more efficiently. We solve the issue of asking the same three questions over and over again by nesting our final two questions within a conditional for our first. If the data is not relevant to the ticker in question, do not ask if this is the starting price or ending price. We've already saved a lot of time by omitting those inquiries. AllStocksAnalysisRefactored() can be further improved; we still inquire if the data row matches the ticker in question, and if not, continue through every line in the worksheet wastefully. A future iteration of our code should eliminate this inefficiency by exiting our for loop as soon as an ending price has been determined. We also eliminate the need to flip back and forth between worksheets by using our arrays. Each index of the array is filled with the relevant information, and only when the arrays are completely populated do we flip to our output worksheet, and print the information by again cycling through our arrays. 
 
