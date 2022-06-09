@@ -1,5 +1,4 @@
-# stock-analysis
-Module 2 Challenge and repository for green stock analysis as part of Data Science & Visualization class
+# ESG Stock Analysis
 
 ## Overview
 
